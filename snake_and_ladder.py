@@ -25,10 +25,16 @@ def apply_board_event(position):
 
 
 def get_player_names():
-    """Ask for the two players names and return them as a list."""
+    """
+    Prompt each player to enter their name and validate that it is not empty.
+
+    Input  : None (reads from keyboard)
+    Output : list of str - a list containing the two player names [name1, name2]
+    """
     players = []
     for i in range(1, 3):
         name = input(f"Enter name for Player {i}: ").strip()
+        # Keep asking until the player gives a non-empty name
         while name == "":
             print("  Name cannot be empty. Please try again.")
             name = input(f"Enter name for Player {i}: ").strip()
