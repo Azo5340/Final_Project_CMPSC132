@@ -129,14 +129,26 @@ def ask_play_again():
     """
     Ask the players whether they want to start a new game.
 
-    Input  : None (reads from keyboard)
-    Output : bool - True if players want to play again, False otherwise
+    Input : None (reads from keyboard)
+    Output: bool - True if players want to play again, False otherwise
     """
     answer = input("\nDo you want to play again? (y / n): ")
     while answer != "y" and answer != "n":
         print("  Please type 'y' or 'n'.")
         answer = input("Do you want to play again? (y / n): ")
     return answer == "y"
+
+def display_scores(scores):
+    """
+    Display the current win count for each player.
+
+    Input : scores (dict) - keys are player names, values are win counts
+    Output: None (prints to terminal)
+    """
+    print("\n  --- Score Board ---")
+    for name, wins in scores.items():
+        print(f"  {name}: {wins} win(s)")
+    print("  -------------------")
 
 
 def main():
