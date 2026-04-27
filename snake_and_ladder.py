@@ -60,10 +60,18 @@ def play_turn(player_name, position):
 
 
 def check_winner(positions, names):
-    """Return the winner's name if someone reached 100, otherwise return None."""
+    """
+    Check whether any player has reached exactly position 100.
+
+    Input  : positions (list of int) - current positions of [player1, player2]
+             names     (list of str) - names of [player1, player2]
+    Output : str  - the winner's name if someone reached 100
+             None - if nobody has won yet
+    """
     for i in range(2):
         if positions[i] == WINNING_POSITION:
             return names[i]
+    # No winner yet
     return None
 
 
