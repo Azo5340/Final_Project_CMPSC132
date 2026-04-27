@@ -36,7 +36,7 @@ git clone https://github.com/Azo5340/Final_Project_CMPSC132.git
 2. Navigate into the project folder:
 
 ```bash
-git clone https://github.com/Azo5340/Final_Project_CMPSC132.git
+cd Final_Project_CMPSC132
 ```
 3. Run the game:
 
