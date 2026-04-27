@@ -28,11 +28,22 @@ Two players take turns rolling a dice and moving along a board numbered from 1 t
 
 ## How to Run
 
-Make sure you have **Python 3** installed, then run:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Azo5340/Final_Project_CMPSC132.git
+```
+2. Navigate into the project folder:
+
+```bash
+git clone https://github.com/Azo5340/Final_Project_CMPSC132.git
+```
+3. Run the game:
 
 ```bash
 python snake_and_ladder.py
 ```
+> Requires Python 3.x — no additional libraries needed.
 
 ## Author for this project
 
