@@ -68,7 +68,13 @@ def check_winner(positions, names):
 
 
 def play_game(names):
-    """Run the main game loop and return the name of the winner."""
+    """
+    Run the main game loop until one player wins.
+
+    Input  : names (list of str) - names of [player1, player2]
+    Output : str - the name of the winning player
+    """
+    # Both players start before square 1
     positions = [0, 0]
     winner = None
     turn = 0
