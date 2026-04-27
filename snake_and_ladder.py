@@ -12,11 +12,17 @@ def roll_dice():
 
 
 def apply_board_event(position):
-    """Check whether a position has a snake or ladder and return the final position."""
+    """
+    Check if a position triggers a snake or ladder and apply the effect.
+
+    Input  : position (int) - the cell the player just landed on
+    Output : int - the final position after applying snake/ladder (or same position if none)
+    """
+    # Snake: player slides down from head to tail
     if position in SNAKES:
         print(f"  Oh no! A snake! Sliding down from {position} to {SNAKES[position]}.")
         return SNAKES[position]
-
+    # Ladder: player climbs up from bottom to top
     if position in LADDERS:
         print(f"  Lucky! A ladder! Climbing up from {position} to {LADDERS[position]}.")
         return LADDERS[position]
