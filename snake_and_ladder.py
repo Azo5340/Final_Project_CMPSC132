@@ -43,7 +43,13 @@ def display_status(positions, names):
 
 
 def play_turn(player_name, position):
-    """Handle one full turn for a player and return the new position."""
+    """
+    Handle one complete turn: roll the dice, move the player, apply board events.
+
+    Input  : player_name (str) - the name of the current player
+             position    (int) - the player's current position before the turn
+    Output : int - the player's new position after the turn
+    """
     input(f"\n{player_name}'s turn - press Enter to roll the dice...")
     die = roll_dice()
     print(f"  {player_name} rolled a {die}.")
@@ -53,8 +59,10 @@ def play_turn(player_name, position):
     if new_position > WINNING_POSITION:
         print(f"  Overshoot! {player_name} stays at {position}.")
         return position
-
+        
     print(f"  {player_name} moves from {position} to {new_position}.")
+    
+    # Check for snake or ladder on the new cell
     new_position = apply_board_event(new_position)
     return new_position
 
