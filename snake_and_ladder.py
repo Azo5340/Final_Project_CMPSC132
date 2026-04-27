@@ -1,8 +1,7 @@
 import random
 
-SNAKES  = {16: 6,  48: 30}
-LADDERS = {3: 22,  20: 38}
-
+SNAKES  = {16: 6,  48: 30} # Keys = snake head position, Values = snake tail position
+LADDERS = {3: 22,  20: 38} # Keys = ladder bottom position, Values = ladder top position
 WINNING_POSITION = 100
 
 
