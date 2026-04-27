@@ -32,3 +32,12 @@ Make sure you have **Python 3** installed, then run:
 
 ```bash
 python snake_and_ladder.py
+```
+
+## Author for this project
+
+Adam Ouareth
+
+
+
+
