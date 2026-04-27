@@ -39,9 +39,15 @@ git clone https://github.com/Azo5340/Final_Project_CMPSC132.git
 cd Final_Project_CMPSC132
 ```
 3. Run the game:
+ - On **macOS / Linux**:
 
 ```bash
-python snake_and_ladder.py
+python3 snake_and_ladder.py
+```
+   - On **Windows**:
+
+```bash
+ python snake_and_ladder.py
 ```
 > Requires Python 3.x — no additional libraries needed.
 
