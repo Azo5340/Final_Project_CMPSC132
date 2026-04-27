@@ -70,8 +70,8 @@ def check_winner(positions, names):
 def play_game(names):
     """Run the main game loop and return the name of the winner."""
     positions = [0, 0]
-    winner    = None
-    turn      = 0
+    winner = None
+    turn = 0
 
     print("\n" + "=" * 50)
     print("  SNAKE & LADDER GAME  -  Good luck!")
@@ -87,12 +87,17 @@ def play_game(names):
 
 
 def ask_play_again():
-    """Ask the players if they want to play again. Return True or False."""
-    answer = input("\nDo you want to play again? (yes / no): ").strip().lower()
-    while answer not in ("yes", "no", "y", "n"):
-        print("  Please type 'yes' or 'no'.")
-        answer = input("Do you want to play again? (yes / no): ").strip().lower()
-    return answer in ("yes", "y")
+    """
+    Ask the players whether they want to start a new game.
+
+    Input  : None (reads from keyboard)
+    Output : bool - True if players want to play again, False otherwise
+    """
+    answer = input("\nDo you want to play again? (y / n): ")
+    while answer != "y" and answer != "n":
+        print("  Please type 'y' or 'n'.")
+        answer = input("Do you want to play again? (y / n): ")
+    return answer == "y"
 
 
 def main():
