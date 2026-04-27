@@ -37,7 +37,13 @@ def get_player_names():
 
 
 def display_status(positions, names):
-    """Print the current board positions of both players."""
+    """
+    Print the current board position of both players.
+
+    Input  : positions (list of int) - current positions of [player1, player2]
+             names     (list of str) - names of [player1, player2]
+    Output : None (prints to terminal)
+    """
     print(f"\n  {names[0]} is at position {positions[0]}")
     print(f"  {names[1]} is at position {positions[1]}")
 
